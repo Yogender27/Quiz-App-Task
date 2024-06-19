@@ -1,38 +1,88 @@
-.App {
+/* General styles */
+ html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
   text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question-section, .score-section {
+  margin: 20px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.question-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6f61;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.answer-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.answer-section button {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 18px;
   color: white;
+  background: #ff6f61;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.answer-section button:hover {
+  background: #55d768;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer-section button:active {
+  background: #ff9a9e;
+}
+
+.score-section {
+  font-size: 34px;
+  font-weight: bold;
+  color: #192d91;
+}
+
+.score-section button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background: #0d5ca5;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  
+}
+
+.score-section button:hover {
+  background: #67abeb;
+  transform: scale(1.05);
+}
+
+.score-section button:active {
+  background: #ff9a9e;
 }
